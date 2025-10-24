@@ -1,26 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Muhammad Jumaturromadhoni</title>
-
-    <link rel="stylesheet" href="css\style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Clean Company Profile</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">My<span>Company</span></h1>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Our Profile</a></li>
+        <li><a href="#vision">Vision & Mission</a></li>
+        <li><a href="#contact">Message Us</a></li>
+      </ul>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </nav>
+  </header>
 
-    <!--Header Content-->
-    <header></header>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2 id="greeting">Hi, <span id="username">Guest</span> 👋</h2>
+      <p>Welcome to our official website. We create technology solutions that empower businesses.</p>
+      <a href="#profile" class="btn">Learn More</a>
+    </div>
+  </section>
 
-    <!--Main Content-->
-    <main></main>
+  <!-- Profile Section -->
+  <section id="profile" class="section">
+    <h2>About the Company</h2>
+    <p>
+      MyCompany is a digital solutions provider that focuses on delivering innovative, 
+      efficient, and sustainable technology. Our team consists of professionals passionate 
+      about helping clients grow through technology.
+    </p>
+  </section>
 
-    <!--Footer Content-->
-    <footer></footer>
-    
-    <!--Javascript External file-->
-    <script src="js\script.js"></script>
+  <!-- Vision & Mission -->
+  <section id="vision" class="section alt-bg">
+    <h2>Vision & Mission</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Vision</h3>
+        <p>To be a leading company providing impactful technology solutions worldwide.</p>
+      </div>
+      <div class="card">
+        <h3>Mission</h3>
+        <ul>
+          <li>Deliver quality and innovation.</li>
+          <li>Empower clients to achieve success.</li>
+          <li>Support sustainability through technology.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message Us -->
+  <section id="contact" class="section">
+    <h2>Message Us</h2>
+    <form id="messageForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="messageInput">Message:</label>
+      <textarea id="messageInput" placeholder="Write your message..." required></textarea>
+
+      <button type="submit" class="btn">Send</button>
+      <p id="formResult" class="result"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> MyCompany. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
-
 </html>
